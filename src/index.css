@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Dancing+Script:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --crt-flicker: 0.02;
+}
+
+body {
+    background-color: #0f172a; /* Deep Space Blue */
+    color: #e0def4;
+    font-family: 'Press Start 2P', system-ui, cursive; /* Default for UI */
+    overflow-x: hidden;
+    image-rendering: pixelated;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Romantic Font Utility */
+.font-romantic {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+    background: #475569;
+    border: 3px solid #0f172a;
+    border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* CRT Scanline Effect */
+.scanlines {
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0),
+        rgba(255,255,255,0) 50%,
+        rgba(0,0,0,0.1) 50%,
+        rgba(0,0,0,0.1)
+    );
+    background-size: 100% 4px;
+    animation: scroll 15s infinite linear;
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+}
+
+@keyframes scroll {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+}
+
+/* CRT Flicker */
+.crt::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 998;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.02795173775069925; }
+  5% { opacity: 0.06316104764831627; }
+  10% { opacity: 0.02381284561845233; }
+  15% { opacity: 0.07663248880650964; }
+  20% { opacity: 0.01258602651048666; }
+  25% { opacity: 0.07471850119643534; }
+  30% { opacity: 0.01570189617267156; }
+  35% { opacity: 0.06781285097872615; }
+  40% { opacity: 0.02621062060867885; }
+  45% { opacity: 0.06497334758509172; }
+  50% { opacity: 0.02711654316682916; }
+  55% { opacity: 0.07065363378544976; }
+  60% { opacity: 0.03859669562916629; }
+  65% { opacity: 0.06556488358485293; }
+  70% { opacity: 0.02657723708453913; }
+  75% { opacity: 0.06648792376991093; }
+  80% { opacity: 0.02498263595674068; }
+  85% { opacity: 0.06606015509930838; }
+  90% { opacity: 0.02324632871081134; }
+  95% { opacity: 0.06917631980309998; }
+  100% { opacity: 0.02898144201088736; }
+}
+
+/* NES-style container utilities */
+.nes-container {
+    position: relative;
+    padding: 1rem;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #fff;
+    /* Simulate pixel border with box-shadows if needed, or just solid borders */
+}
+
+/* Cursor */
+.cursor-pointer {
+    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAtJREFUGFdjYAACAAAFAAGq1cRRAAAAAElFTkSuQmCC'), pointer; 
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Soft Glow */
+.glow-text {
+    text-shadow: 0 0 10px rgba(235, 111, 146, 0.7);
+}
