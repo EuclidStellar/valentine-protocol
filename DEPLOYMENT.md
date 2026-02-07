@@ -5,25 +5,25 @@ The easiest way to deploy this **React + Vite** project is using **Vercel** or *
 ## Option 1: Vercel (Recommended) 🏆
 
 1.  **Create a GitHub Repository**:
-    *   Go to [GitHub.com](https://github.com/new) and create a new repository (e.g., `guns-journey`).
+    *   Go to [GitHub.com](https://github.com/new) and create a new repository (e.g., `Mohtarmas-journey`).
     *   Push your local code to this repository:
         ```bash
         git init
         git add .
         git commit -m "Final Vday Update"
         git branch -M main
-        git remote add origin https://github.com/YOUR_USERNAME/guns-journey.git
+        git remote add origin https://github.com/YOUR_USERNAME/Mohtarmas-journey.git
         git push -u origin main
         ```
 
 2.  **Deploy on Vercel**:
     *   Go to [Vercel.com](https://vercel.com) and sign up/login.
     *   Click **"Add New..."** -> **"Project"**.
-    *   Import your `guns-journey` repository.
+    *   Import your `Mohtarmas-journey` repository.
     *   **Framework Preset**: It should auto-detect `Vite`.
     *   Click **Deploy**.
 
-3.  **Done!** You'll get a URL like `https://guns-journey.vercel.app` to share with her.
+3.  **Done!** You'll get a URL like `https://Mohtarmas-journey.vercel.app` to share with her.
 
 ---
 

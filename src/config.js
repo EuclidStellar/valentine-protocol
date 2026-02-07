@@ -10,7 +10,7 @@ import valentineAudio from './assets/audio/a_thousand_years.mp3';
 const config = {
     // 👤 Personal Details
     person: {
-        name: "Gun",  // Appears in titles and letters
+        name: "Mohtarma",  // Appears in titles and letters
         nickname: "Player 2", 
     },
 
