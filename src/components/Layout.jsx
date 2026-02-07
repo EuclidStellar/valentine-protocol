@@ -1,5 +1,6 @@
 import React from 'react';
 import InventoryBar from './InventoryBar';
+import DevTools from './DevTools';
 
 const Layout = ({ children }) => {
   return (
@@ -48,7 +49,10 @@ const Layout = ({ children }) => {
 
       {/* Music Player Removed as per request (Per-day audio implementation active) */}
 
-      {/* Dev Tools Removed for Production - Timeline Locked */}
+      {/* Dev Tools - Enabled for Demo/Time Travel */}
+      <div className="fixed bottom-4 left-4 z-50">
+          <DevTools />
+      </div>
     </div>
   );
 };

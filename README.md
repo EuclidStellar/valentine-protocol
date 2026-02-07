@@ -11,8 +11,7 @@
 ---
 
 ### 🎮 Live Demo
-*(Replace this with your Vercel/Netlify link after deploying!)*  
-[**👉 View Demo**](https://your-demo-link.vercel.app)
+[**👉 View Demo**](https://gunnn.netlify.app)
 
 ---
 
@@ -28,6 +27,7 @@
     *   **Feb 12 (Hug):** "Hold to Embrace" haptic-style button 🫂.
     *   **Feb 13 (Kiss):** Rhythm game to catch falling kisses 💋.
     *   **Feb 14 (Valentine):** The Key Vault. Collect all 7 keys to unlock the final letter 💝.
+*   **⏳ Time Travel Mode:** A built-in DevTools menu to "fast forward" to any day for testing (perfect for demos!).
 *   **🎨 Dreamy Retro Aesthetic:** CRT scanlines, nebula backgrounds, and floating particles.
 *   **📸 Camera Integration:** Captures their reaction during the proposal (stored locally!).
 *   **⚙️ 100% Configurable:** Change names, music, messages, and dates in seconds.
@@ -92,7 +92,17 @@ Have a cooler mini-game idea? Found a bug?
 
 ---
 
-## 📜 License
+## �️ Debugging / Time Travel
+Since this is an open-source demo, I've left the **Time Travel** feature enabled!
+
+1.  Look for the **Wrench Icon** 🔧 in the bottom-left corner.
+2.  Click it to open the DevTools.
+3.  Tap any date to instantly unlock it and fast-forward time. 
+    *(Great for showing off the Valentine's Day finale without waiting a week!)*
+
+---
+
+## �📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
